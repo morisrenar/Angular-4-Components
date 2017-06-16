@@ -3,3 +3,5 @@
 </h1>
 
 <app-databinding></app-databinding>
+<app-lifecycle *ngIf="!delete" ></app-lifecycle>
+<button (click)="delete = true">Click to delete</button>
