@@ -1,15 +1,16 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-property-binding',
   template: `
     Result is:  {{result}}
   `,
-  styles: []
+  styles: [],
+  inputs: ['result']
 })
 export class PropertyBindingComponent implements OnInit {
 
-  @Input() result = 0;
+  result = 0;
   
   constructor() { }
 
