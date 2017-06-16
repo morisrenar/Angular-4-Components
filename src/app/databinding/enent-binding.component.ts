@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-enent-binding',
   template: `
-  <button (click)="onClicked()">Click Me !!!</button>
+  <button (click)="onClicked()">Click Me EB !!!</button>
   `,
   styles: []
 })
 export class EnentBindingComponent implements OnInit {
 
+  @Output() clicked = new EventEmitter<string>();
+  
   onClicked() {
-    alert('It Worked.');
+    console.log('click in event binding');
+    this.clicked.emit('It works');
   }
   
   constructor() { }

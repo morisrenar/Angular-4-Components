@@ -7,4 +7,4 @@
 <p [ngStyle]="{color: 'green'}">Is this styled?</p>
 <h3>Custom Property Binding</h3>
 <app-property-binding [result]="10"></app-property-binding>
-<app-enent-binding></app-enent-binding>
+<app-enent-binding (clicked)="onClicked($event)" ></app-enent-binding>

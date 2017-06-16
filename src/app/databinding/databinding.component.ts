@@ -18,5 +18,9 @@ export class DatabindingComponent implements OnInit {
   onTest() {
     return true;
   }
+  
+  onClicked(value: string) {
+    alert(value);
+  }
 
 }
