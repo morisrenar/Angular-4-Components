@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertyBindingComponent } from './databinding/property-binding.component';
+import { EnentBindingComponent } from './databinding/enent-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatabindingComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EnentBindingComponent
   ],
   imports: [
     BrowserModule,
